@@ -45,6 +45,7 @@ describe "MusicLibraryController" do
       expect($stdout).to receive(:puts).with("What would you like to do?")
 
       music_library_controller.call
+      binding.pry
     end
 
     it "asks the user for input" do
